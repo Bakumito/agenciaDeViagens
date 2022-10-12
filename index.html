@@ -35,16 +35,33 @@
             <h2>solicite um orçamento</h2>
           </div>
           <fieldset>
-            <legend>Informe seus dados</legend>
-
-            <label for="nome">Nome</label>
-            <input id="nome" type="text" name="nome" />
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" />
-            <label for="tel">Celular</label>
-            <input id="tel" type="tel" name="tel" />
+            <legend class="form-title">Informe seus dados</legend>
 
             <div>
+              <label for="nome">Nome</label>
+              <input
+                id="nome"
+                type="text"
+                name="nome"
+                placeholder="Nome Completo"
+              />
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email para contato"
+              />
+              <label for="tel">Celular</label>
+              <input
+                id="tel"
+                type="tel"
+                name="tel"
+                placeholder="(xx) x xxxx xxxx"
+              />
+            </div>
+
+            <div class="container">
               <div>
                 <label for="data-ida">Data da Ida</label>
                 <input id="data-ida" type="date" name="data-ida" />
@@ -55,47 +72,57 @@
               </div>
             </div>
 
-            <div>
+            <div class="container">
               <div>
                 <label for="origem">Origem</label>
                 <select id="origem" name="origem">
-                  <option value="manaus">manaus</option>
-                  <option value="maranhao">maranhao</option>
+                  <option selected>Partindo de</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="GO">Goias</option>
+                  <option value="MA">Maranhão</option>
                 </select>
               </div>
               <div>
                 <label for="destino">Destino</label>
                 <select id="destino" name="destino">
-                  <option value="manaus">manaus</option>
-                  <option value="maranhao">maranhao</option>
+                  <option selected>Indo para</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="GO">Goias</option>
+                  <option value="MA">Maranhão</option>
                 </select>
               </div>
             </div>
 
             <div>
               <legend>Quarto com cama infantil?</legend>
-              <div>
-                <input
-                  id="infantilSim"
-                  type="radio"
-                  name="infantilSim"
-                  value="sim"
-                />
-                <label for="infantilSim">Sim</label>
-              </div>
-              <div>
-                <input
-                  id="infantilNao"
-                  type="radio"
-                  name="infantilNao"
-                  value="nao"
-                />
-                <label for="infantilNao">Não</label>
+              <div class="escolhas">
+                <div>
+                  <input
+                    id="infantilSim"
+                    type="radio"
+                    name="infantilSim"
+                    value="sim"
+                  />
+                  <label for="infantilSim">Sim</label>
+                </div>
+                <div>
+                  <input
+                    id="infantilNao"
+                    type="radio"
+                    name="infantilNao"
+                    value="nao"
+                  />
+                  <label for="infantilNao">Não</label>
+                </div>
               </div>
             </div>
             <div>
               <legend>Preferências da Hospedagem</legend>
-              <div>
+              <div class="escolhas">
                 <div>
                   <input
                     id="piscina"
