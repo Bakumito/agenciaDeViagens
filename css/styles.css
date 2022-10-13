@@ -7,6 +7,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,9 +23,6 @@ body {
 /* ---------- FIM ROOT ----------
 
 ---------- INICIO TEMPORARIO ---------- */
-img {
-  width: 250px;
-}
 /* ---------- FIM TEMPORARIO ----------
 
 ---------- INICIO HEADER ---------- */
@@ -178,6 +176,110 @@ button:hover {
   cursor: pointer;
   margin-top: 1.2rem;
 }
+
+/* section #ofertas */
+#ofertas, #anuncios {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 3.2rem auto 0 auto;
+  max-width: var(--hd-width);
+}
+
+#ofertas h2, #anuncios h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#ofertas h3, #anuncios h3 {
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+}
+
+#ofertas h3 span {
+  font-weight: bold;
+}
+
+.figures {
+  width: 100%;
+  height: 37.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.figures .first {
+  position: relative;
+  width: calc(50% - 1rem);
+  height: 100%;
+}
+
+.figures .second {
+  width: calc(50% - 1rem);
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.second figure {
+  position: relative;
+  width: calc(50% - 1rem);
+  height: calc(50% - 1rem);
+  margin: 0 0.6rem;
+}
+
+.figures img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0 0 0 / 50%);
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+
+article {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+article figure {
+  width: calc(50% - 1rem);
+  height: 100%;
+  object-fit: cover;
+}
+
+article figure img {
+  width: 100%;
+  height: 100%;
+}
+
+article figure div {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+article figure div p{
+  font-size: 1.4rem;
+  color: grey;
+  margin: 1.5rem 0;
+}
 /* ---------- FIM MAIN ----------
 
----------- INICIO PROXIMO ---------- */
+---------- INICIO FOOTER ---------- */
+
+/* ---------- FIM FOOTER ----------
