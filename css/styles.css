@@ -281,5 +281,52 @@ article figure div p{
 /* ---------- FIM MAIN ----------
 
 ---------- INICIO FOOTER ---------- */
+footer {
+  width: 100%;
+  background-color: #5d15d1;
+  margin-top: 3.2rem;
+}
+
+footer section {
+  max-width: var(--hd-width);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+footer section div {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+}
+
+footer section div h2 {
+  color: #fff;
+  font-size: 2.0rem;
+  margin-bottom: 1.5rem;
+}
+
+footer section div nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer section div nav figure {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+footer section div nav a {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+footer section div nav img {
+  width: 1.8rem;
+}
+
 
 /* ---------- FIM FOOTER ----------
